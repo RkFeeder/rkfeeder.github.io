@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio website" />
+    <title>Joonho Kim | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="#" class="logo">Joonho Kim</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <p class="eyebrow">Hello, I’m</p>
+        <h1>Joonho Kim</h1>
+        <p class="hero-subtitle">
+          Born in South Korea, grew up in New Jersey, and currently living in South Korea.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Contact Me</a>
+        </div>
+      </section>
+
+      <section id="about" class="section container">
+        <h2>About</h2>
+        <p>
+          I am a developer interested in software engineering and AI, with experience
+          building practical projects through hackathons and problem-solving programs.
+        </p>
+      </section>
+
+      <section id="projects" class="section container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>Selected work that shows my technical and product thinking.</p>
+        </div>
+        <div class="project-grid">
+          <article class="card">
+            <h3>2026 LG Aimers</h3>
+            <p>
+              Participated in the LG Aimers program focused on solving real-world AI
+              challenges and model optimization tasks.
+            </p>
+            <p class="tech">Tech: Python, LLM, Quantization</p>
+            <a href="https://github.com/RkFeeder/2026-LG-Aimers.git" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </article>
+          <article class="card">
+            <h3>2023 AIE Hackathon</h3>
+            <p>
+              Built and presented an AI-focused hackathon project under time constraints,
+              from idea to working prototype.
+            </p>
+            <p class="tech">Tech: Python, AI/ML, Team Collaboration</p>
+            <a href="https://github.com/RkFeeder/2023-AIE-Hackathon.git" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section container">
+        <h2>Skills</h2>
+        <ul class="chip-list">
+          <li>Python</li>
+          <li>Machine Learning</li>
+          <li>LLM</li>
+          <li>JavaScript</li>
+          <li>Data Analysis</li>
+          <li>Git & GitHub</li>
+          <li>Hackathon Prototyping</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section container">
+        <h2>Contact</h2>
+        <p>
+          Reach me at
+          <a href="mailto:randyjk2002@gmail.com">randyjk2002@gmail.com</a>
+          or connect on
+          <a href="https://github.com/RkFeeder" target="_blank" rel="noreferrer">GitHub</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Joonho Kim. All rights reserved.</p>
+        <a href="#" class="to-top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
