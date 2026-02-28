@@ -17,29 +17,32 @@
     <header class="site-header">
       <nav class="nav container">
         <a href="#" class="logo">Joonho Kim</a>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#qualifications">Qualifications</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#education" data-i18n="nav.education">Education</a></li>
+            <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+            <li><a href="#qualifications" data-i18n="nav.qualifications">Qualifications</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+          <button id="languageToggle" class="lang-toggle" type="button">한국어</button>
+        </div>
       </nav>
     </header>
 
     <main>
       <section class="hero container">
         <div class="hero-content">
-          <p class="eyebrow">Hello, I’m</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Hello, I’m</p>
           <h1>Joonho Kim</h1>
-          <p class="hero-subtitle">
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
             Born in South Korea, grew up in New Jersey, and currently living in South Korea.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-secondary" href="#contact">Contact Me</a>
+            <a class="btn btn-primary" href="#projects" data-i18n="hero.btnProjects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact" data-i18n="hero.btnContact">Contact Me</a>
           </div>
         </div>
         <img
@@ -50,8 +53,8 @@
       </section>
 
       <section id="about" class="section container">
-        <h2>About</h2>
-        <p>
+        <h2 data-i18n="about.title">About</h2>
+        <p data-i18n="about.body">
           I am a sophomore interested in physical AI and control systems, with experience
           building practical projects through hackathons and problem-solving programs.
         </p>
@@ -59,33 +62,33 @@
 
       <section id="projects" class="section container">
         <div class="section-head">
-          <h2>Projects</h2>
-          <p>Selected work that shows my technical and product thinking.</p>
+          <h2 data-i18n="projects.title">Projects</h2>
+          <p data-i18n="projects.subtitle">Selected work that shows my technical and product thinking.</p>
         </div>
         <div class="project-grid">
           <article class="card">
             <h3>2026 LG Aimers</h3>
-            <p>
+            <p data-i18n="projects.lg.desc">
               Participated in the LG Aimers program focused on solving real-world AI
               challenges and model optimization tasks.
             </p>
-            <p class="tech">Tech: Python, LLM, Quantization</p>
+            <p class="tech" data-i18n="projects.lg.tech">Tech: Python, LLM, Quantization</p>
             <a href="https://github.com/RkFeeder/2026-LG-Aimers.git" target="_blank" rel="noreferrer">GitHub ↗</a>
           </article>
           <article class="card">
             <h3>2023 AIE Hackathon</h3>
-            <p>
+            <p data-i18n="projects.aie.desc">
               Built and presented a hackathon project under time constraints,
               from idea to working prototype.
             </p>
-            <p class="tech">Tech: Python, Team Collaboration</p>
+            <p class="tech" data-i18n="projects.aie.tech">Tech: Python, Team Collaboration</p>
             <a href="https://github.com/RkFeeder/2023-AIE-Hackathon.git" target="_blank" rel="noreferrer">GitHub ↗</a>
           </article>
         </div>
       </section>
 
       <section id="skills" class="section container">
-        <h2>Skills</h2>
+        <h2 data-i18n="skills.title">Skills</h2>
         <ul class="chip-list">
           <li>Python</li>
           <li>Machine Learning</li>
@@ -98,76 +101,76 @@
       </section>
 
       <section id="education" class="section container">
-        <h2>Education</h2>
+        <h2 data-i18n="education.title">Education</h2>
         <div class="education-list">
           <article class="card">
             <h3>Yonsei University</h3>
-            <p>Bachelor of Engineering in Applied Information Engineering</p>
-            <p class="tech">Seoul, South Korea · Expected Graduation: 2029</p>
+            <p data-i18n="education.yonsei.degree">Bachelor of Engineering in Applied Information Engineering</p>
+            <p class="tech" data-i18n="education.yonsei.meta">Seoul, South Korea · Expected Graduation: 2029</p>
           </article>
           <article class="card">
             <h3>Fort Lee High School</h3>
-            <p>High School Diploma</p>
-            <p class="tech">Fort Lee, New Jersey · Graduation: 2021</p>
+            <p data-i18n="education.fort.degree">High School Diploma</p>
+            <p class="tech" data-i18n="education.fort.meta">Fort Lee, New Jersey · Graduation: 2021</p>
           </article>
         </div>
       </section>
 
       <section id="experience" class="section container">
-        <h2>Experience</h2>
+        <h2 data-i18n="experience.title">Experience</h2>
         <div class="education-list">
           <article class="card">
             <h3>ROK Army</h3>
-            <p>Role: English Interpreter</p>
-            <p class="tech">Duration: 2024.01 ~ 2025.07</p>
+            <p data-i18n="experience.rok.role">Role: English Interpreter</p>
+            <p class="tech" data-i18n="experience.rok.duration">Duration: 2024.01 ~ 2025.07</p>
           </article>
           <article class="card">
             <h3>READ101 Dongtan</h3>
-            <p>Role: English Teacher</p>
-            <p class="tech">Duration: 2025.08 ~ 2025.12</p>
+            <p data-i18n="experience.read.role">Role: English Teacher</p>
+            <p class="tech" data-i18n="experience.read.duration">Duration: 2025.08 ~ 2025.12</p>
           </article>
         </div>
       </section>
 
       <section id="qualifications" class="section container">
-        <h2>Qualifications</h2>
+        <h2 data-i18n="qualifications.title">Qualifications</h2>
         <div class="education-list">
           <article class="card">
             <h3>ADsP (Advanced Data Analytics Semi-Professional)</h3>
-            <p>Issued by Korea Data Agency (K-DATA)</p>
-            <p class="tech">Received: 2026.03.06</p>
+            <p data-i18n="qualifications.adsp.issuer">Issued by Korea Data Agency (K-DATA)</p>
+            <p class="tech" data-i18n="qualifications.adsp.received">Received: 2026.03.06</p>
           </article>
           <article class="card">
             <h3>SQLD (SQL Developer)</h3>
-            <p>Issued by Korea Data Agency (K-DATA)</p>
-            <p class="tech">Received: 2025.12.12</p>
+            <p data-i18n="qualifications.sqld.issuer">Issued by Korea Data Agency (K-DATA)</p>
+            <p class="tech" data-i18n="qualifications.sqld.received">Received: 2025.12.12</p>
           </article>
           <article class="card">
-            <h3>Second Grade Professional Interpreter (Korean → English)</h3>
-            <p>
+            <h3 data-i18n="qualifications.interpreter.title">Second Grade Professional Interpreter (Korean → English)</h3>
+            <p data-i18n="qualifications.interpreter.issuer">
               ITT (Interpretation &amp; Translation Test), ITT Test Committee /
               International Interpretation &amp; Translation Association (IITA)
             </p>
-            <p class="tech">Received: 2025.09.27</p>
+            <p class="tech" data-i18n="qualifications.interpreter.received">Received: 2025.09.27</p>
           </article>
         </div>
       </section>
 
       <section id="contact" class="section container">
-        <h2>Contact</h2>
+        <h2 data-i18n="contact.title">Contact</h2>
         <p>
-          Reach me at
+          <span data-i18n="contact.lead">Reach me at</span>
           <a href="mailto:randyjk2002@gmail.com">randyjk2002@gmail.com</a>
-          or connect on
-          <a href="https://github.com/RkFeeder" target="_blank" rel="noreferrer">GitHub</a>.
+          <span data-i18n="contact.orConnect">or connect on</span>
+          <a href="https://github.com/RkFeeder" target="_blank" rel="noreferrer" data-i18n="contact.github">GitHub</a>.
         </p>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-content">
-        <p>© <span id="year"></span> Joonho Kim. All rights reserved.</p>
-        <a href="#" class="to-top">Back to top ↑</a>
+        <p>© <span id="year"></span> <span data-i18n="footer.rights">Joonho Kim. All rights reserved.</span></p>
+        <a href="#" class="to-top" data-i18n="footer.top">Back to top ↑</a>
       </div>
     </footer>
 
